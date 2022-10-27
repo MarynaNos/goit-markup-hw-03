@@ -39,6 +39,18 @@ img {
     overflow: hidden;
 }
 
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 /* Змінні кольорів */
 :root {
     --title-color: #212121;
@@ -56,6 +68,9 @@ body {
 }
 
 /* Header */
+header{
+    border-bottom: 1px solid #ECECEC;
+}
 .head-logo-web {
     font-family: 'Raleway';
     font-weight: 700;
@@ -72,7 +87,10 @@ body {
     letter-spacing: 0.03em;
     color: #000000;
 }
-.navigation {   
+.navigation {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px; 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -94,10 +112,13 @@ body {
 }
 .btn {
     cursor: pointer;
+    border: none;
 }
 
 /* Footer */
-.foot {
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: #2F303A;
 }
 .foot-logo-web {
@@ -117,6 +138,8 @@ body {
     color: #FFFFFF;
 }
 .address {
+    display: inline-block;
+    margin-top: 20px;
     font-family: 'Roboto';
     font-style: normal;
     font-size: 14px;
@@ -125,6 +148,8 @@ body {
     color: #FFFFFF;
 }
 .contacts-footer {
+    display: inline-block;
+    margin-top: 9px;
     font-family: 'Roboto';
     font-style: normal;
     font-size: 14px;
@@ -141,9 +166,13 @@ body {
 
 /* Studio */
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background: #2F303A;
 }
 .main-title {
+    width: 696px;
+    margin: 0 auto;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -153,6 +182,12 @@ body {
     color: #FFFFFF;
 }
 .order-btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    min-width: 216px;
+    min-height: 50px;
+    border-radius: 4px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -164,6 +199,9 @@ body {
 .order-btn:hover,
 .order-btn:focus {
     background: #188CE8;
+}
+.works{
+    padding-top: 0;
 }
 .advantages-title {
     font-weight: 700;
