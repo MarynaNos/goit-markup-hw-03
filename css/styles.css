@@ -1,3 +1,12 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 /* Обнулення стилів */
 h1, 
 h2, 
@@ -43,8 +52,7 @@ img {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 .section{
@@ -200,6 +208,11 @@ footer {
 .order-btn:focus {
     background: #188CE8;
 }
+.works-box{
+    display: flex;
+    gap: 30px;
+    /* flex-basis: calc((100%-30px*2)/3); */
+}
 .works{
     padding-top: 0;
 }
@@ -217,13 +230,24 @@ footer {
     color: var(--text-color);
  }
 .title-h2 {
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
 }
+.team-box{
+    display: flex;
+    gap: 30px;
+    /* flex-basis: calc((100%-30px*3)/4); */
+}
+.name-card{
+    padding: 30px 60px;
+    
+}
 .name {
+    padding-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -253,7 +277,18 @@ footer {
     color: #FFFFFF;
     background: var(--active-color);
 }
+.examples-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.card-sign{
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
 .card-title {
+    margin-bottom: 4px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
